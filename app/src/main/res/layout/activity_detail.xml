@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity">
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" android:id="@+id/scrollView">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="198dp"
+                    android:layout_height="212dp" tools:srcCompat="@tools:sample/avatars"
+                    android:id="@+id/detail_image"/>
+            <TextView
+                    android:text="Имя:"
+                    android:layout_toEndOf="@id/detail_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/name_constlabel" android:layout_marginTop="10dp"/>
+            <TextView
+                    android:text="TextView"
+                    android:textStyle="normal|bold"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/name_constlabel"
+                    android:layout_toEndOf="@id/detail_image"
+                    android:layout_height="wrap_content" android:id="@+id/name_label" android:textSize="16sp"/>
+            <TextView
+                    android:text="Компания:"
+                    android:layout_width="wrap_content"
+                    android:layout_toEndOf="@id/detail_image"
+                    android:layout_below="@id/name_label"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content" android:id="@+id/company_constlabel"/>
+            <TextView
+                    android:text="TextView"
+                    android:textStyle="normal|bold"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/company_constlabel"
+                    android:layout_toEndOf="@id/detail_image"
+                    android:layout_height="wrap_content" android:id="@+id/company_label" android:textSize="16sp"/>
+            <TextView
+                    android:text="Телефон:"
+                    android:layout_width="wrap_content"
+                    android:layout_toEndOf="@id/detail_image"
+                    android:layout_below="@id/company_label"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content" android:id="@+id/phone_constlabel"/>
+            <TextView
+                    android:text="TextView"
+                    android:textStyle="normal|bold"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/phone_constlabel"
+                    android:layout_toEndOf="@id/detail_image"
+                    android:layout_height="wrap_content" android:id="@+id/phone_label" android:textSize="16sp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/detail_image"
+                    android:layout_margin="15dp"
+                    android:layout_height="wrap_content" android:id="@+id/characteristic_label"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
+
